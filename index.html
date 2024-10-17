@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
-  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -22,64 +22,65 @@
   <meta name="theme-color" content="#fafafa">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
-<body>
-  <section class="about-me-section">
-    <div class="container">
-      <div class="about-me-content">
-        <h2>Sobre mí</h2>
-        <p>Hola, sóc en Roger Surroca, tinc 20 anys i actualment estic cursant el segon any de Desenvolupament d'Aplicacions Web (DAW) a l'Institut IES Cirvianum.</p>
+<script src="https://cdn.tailwindcss.com"></script>
+<body class="bg-black">
+  <section class="bg-white p-[20px] mx-[20px] rounded-b-lg">
+    <div class="flex flex-col md:flex-row justify-between items-center max-w-[1200px] mx-auto">
+      <div class="mr-[20px]">
+        <h2 class="text-[2rem] mb-[10px]">Sobre mí</h2>
+        <p class="text-[1.2rem] ">Hola, sóc en Roger Surroca, tinc 20 anys i actualment estic cursant el segon any de Desenvolupament d'Aplicacions Web (DAW) a l'Institut IES Cirvianum.</p>
       </div>
-      <div class="profile-picture">
-        <img src="./img/fotoPerfil.jpg" alt="Foto de Roger Surroca" class="personal-photo">
+      <div class="w-[120px] h-full md:w-[150px] md:h-full object-cover shadow-lg">
+        <img src="./img/fotoPerfil.jpg" alt="Foto de Roger Surroca" class="rounded-lg">
       </div>
     </div>
   </section>
 
   </section>
-  <section>
-    <div class="projects-container">
-      <div class="project-card">
-        <div class="image-profile">
-          <img src="./img/LogoPhp-500_x_250.png" alt="Proyecto 1">
+  <section class="m-10">
+    <div class="flex flex-wrap justify-around">
+      <div class="bg-white border-4 border-blue-500 rounded-lg p-8 m-5">
+        <div class="w-full h-auto">
+          <img src="./img/LogoPhp-500_x_250.png" alt="Proyecto 1" class="object-cover">
         </div>
-          <h3>Projecte Veterinari PHP</h3>
-          <p>Aquest projecte s'ha realitzat únicament amb el llenguatge PHP i Bootstrap.</p>
+          <h3 class="mt-5 text-xl font-semibold">Projecte Veterinari PHP</h3>
+          <p class="text-gray-700">Aquest projecte s'ha realitzat únicament amb el llenguatge PHP</p>
       </div>
-      <div class="project-card">
-        <dic class="image-profile">
-          <img src="./img/JavaScript-logo-500_x_250.png" alt="Proyecto 2">        </dic>
+      <div class="bg-white border-4 border-blue-500 rounded-lg p-8 m-5">
+        <dic class="w-full h-auto">
+          <img src="./img/JavaScript-logo-500_x_250.png" alt="Proyecto 2" class="object-cover">        
+        </dic>
           <h3>Projecte JavaScript</h3>
           <p>Està en procés</p>
       </div>
       <a href="https://github.com/Transloider/ProjecteDespesesCasa/tree/main">
-        <div class="project-card">
-          <div class="image-profile">
-            <img src="./img/Java-500_x_250.png" alt="Proyecto 3">
+        <div class="bg-white border-4 border-blue-500 rounded-lg p-8 m-5">
+          <div class="w-full h-auto">
+            <img src="./img/Java-500_x_250.png" alt="Proyecto 3" class="object-cover">
           </div>
           <h3>Projecte Despeses</h3>
           <p>Per aquest projecte he fet servir Java i JavaFX.</p>
         </div>
       </a>
       <a href="https://www.youtube.com/watch?v=PKAa_qUl5dg">
-        <div class="project-card">
-          <div class="image-profile">
-            <img src="./img/Java-500_x_250.png" alt="Proyecto 3">
+        <div class="bg-white border-4 border-blue-500 rounded-lg p-8 m-5">
+          <div class="w-full h-auto">
+            <img src="./img/Java-500_x_250.png" alt="Proyecto 3" class="object-cover">
           </div>
             <h3>Projecte Agència de Agència de Treball</h3>
             <p>Projecte realitzat únicament amb Java.</p>
         </div>
       </a>
-        <div class="project-card">
-          <div class="image-profile">
-            <img src="./img/Java-500_x_250.png" alt="Proyecto 3">
+        <div class="bg-white border-4 border-blue-500 rounded-lg p-8 m-5">
+          <div class="w-full h-auto">
+            <img src="./img/Java-500_x_250.png" alt="Proyecto 3" class="object-cover">
           </div>
             <h3>Projecte Gestio Lloguer Cotxes</h3>
             <p>Projecte realitzat únicament amb Java.</p>
         </div>
-        <div class="project-card">
-          <div class="image-profile">
-            <img src="./img/images-500_x_250 (1).png"alt="Proyecto 3">
+        <div class="bg-white border-4 border-blue-500 rounded-lg p-8 m-5">
+          <div class="w-full h-auto">
+            <img src="./img/images-500_x_250 (1).png"alt="Proyecto 3" class="object-cover">
           </div>
             <h3>Projecte Migració de BDD</h3>
             <p>En aquest es va realitzar una migració del projecte Despeses.</p>
@@ -87,23 +88,18 @@
   </div>
   </section>
   <footer>
-    <div class="footerHeader">
-      <h3>Informació de contacte</h3>
+    <div class="bg-white pt-[10px] text-center">
+      <h3 class="font-bold">Informació de contacte</h3>
     </div>
-    <div class="footerInfo">
-      <div class="info">
+    <div class="bg-white flex flex-row justify-center">
+      <div class="p-[10px]">
         <p> <i class="fa-regular fa-envelope"></i> rogersurrocamencio@gmail.com</p>
       </div>
-      <div class="info">
+      <div class="p-[10px]">
         <p> <i class="fa-solid fa-phone"></i> 667839492</p>
-      </div>
-      <div class="info">
-        <p></p>
       </div>
     </div>
   </footer>
   <script src="js/app.js"></script>
-
 </body>
-
 </html>
